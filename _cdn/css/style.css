@@ -1,0 +1,101 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.media h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+.media .video {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.player {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+}
+
+.player .player_controls {
+    z-index: 9999;
+    position: absolute;
+    bottom: 0;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-transition: opacity 0.4s;
+    -moz-transition: opacity 0.4s;
+    -ms-transition: opacity 0.4s;
+    -o-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.player:hover .player_controls {
+    opacity: 1;
+}
+
+.player .player_controls .player_play_pause,
+.player .player_controls .player_mute,
+.player .player_controls .player_full_screen {
+    flex-basis: 20px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+.player .player_controls .player_volume {
+    flex-basis: 20%;
+    outline: none;
+}
+
+.player .player_controls .player_progress_bar {
+    flex-basis: calc(100% - 20% - 84px);
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
